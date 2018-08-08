@@ -13,13 +13,11 @@ function getWeatherFromApi(city) {
   .then(displayWeather);
 }
 
-function fetchCurrentWeather(city) {
-  //fetch current weather based on city
-}
-
-function displayCurrentWeather(json) {
-  //render current weather data to the DOM using provided IDs and json from API
-  debugger;
+function displayWeather(weatherJson) {
+let temp = weatherJson.main.temp;
+let tempRow = document.getElementById("temp");
+tempRow.innterHTML = "temp";
+debugger;
 }
 
 
