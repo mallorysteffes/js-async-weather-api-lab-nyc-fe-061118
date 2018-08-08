@@ -21,8 +21,9 @@ tempRow.innerHTML = temp;
 
 
 function fetchFiveDayForecast(city) {
-fetch(`https://api.openweathermap.org/data/2.5/forecast?` + city + "&APPID=" )
-  
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=` + city + "&APPID=" + API_KEY)
+.then(response => response.json())
+.then(displayFiveDayForecast)
 }
 
 function displayFiveDayForecast(json) {
