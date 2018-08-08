@@ -3,14 +3,14 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 function handleFormSubmit(event) {
   event.preventDefault();
-  let city= document.getElementById("city").value
-  getWeatherFromApi(city)
+  let city= document.getElementById("city").value;
+  getWeatherFromApi(city);
 }
 
 function getWeatherFromApi(city) {
   fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city + "&APPID=" + API_KEY + "&units=imperial")
   .then(response => response.json())
-  .then(displayWeather)
+  .then(displayWeather);
 }
 
 function fetchCurrentWeather(city) {
