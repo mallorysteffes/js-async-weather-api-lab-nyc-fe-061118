@@ -17,7 +17,6 @@ function displayWeather(weatherJson) {
 let temp = weatherJson.main.temp;
 let tempRow = document.getElementById("temp");
 tempRow.innterHTML = "temp";
-debugger;
 }
 
 
