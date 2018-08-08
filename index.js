@@ -5,6 +5,7 @@ function handleFormSubmit(event) {
   event.preventDefault();
   let city= document.getElementById("city").value;
   getWeatherFromApi(city);
+  fetchFiveDayForecast(city);
 }
 
 function getWeatherFromApi(city) {
