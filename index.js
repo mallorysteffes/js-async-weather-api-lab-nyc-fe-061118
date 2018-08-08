@@ -8,7 +8,7 @@ function handleFormSubmit(event) {
 }
 
 function getWeatherFromApi(city) {
-  fetch("api.openweathermap.org/data/2.5/weather?q="+ city)
+  fetch("api.openweathermap.org/data/2.5/weather?q="+ city + "&APPID=" + API_KEY)
   .then(response => response.json())
   .then(displayWeather)
 }
@@ -19,6 +19,7 @@ function fetchCurrentWeather(city) {
 
 function displayCurrentWeather(json) {
   //render current weather data to the DOM using provided IDs and json from API
+  debugger;
 }
 
 
