@@ -3,7 +3,8 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 function handleFormSubmit(event) {
   //handle submit event
-  alert("thanks for submitting the form")
+debugger;
+  
 }
 
 function fetchCurrentWeather(city) {
