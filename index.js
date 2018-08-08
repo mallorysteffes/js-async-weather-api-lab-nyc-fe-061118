@@ -27,7 +27,8 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=` + city + "&APPID=" +
 }
 
 function displayFiveDayForecast(json) {
-  //render five day forecast data to the DOM using provided IDs and json from API
+debugger;
+  
 }
 
 function createChart(json) {
