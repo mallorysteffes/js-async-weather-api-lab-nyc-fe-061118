@@ -8,7 +8,6 @@ function handleFormSubmit(event) {
 }
 
 function getWeatherFromApi(city) {
-  debugger;
   fetch("api.openweathermap.org/data/2.5/weather?q="+ city)
   .then(response => response.json())
   .then(displayWeather)
